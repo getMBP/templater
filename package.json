@@ -1,0 +1,37 @@
+{
+   "name": "componentprojects",
+   "version": "1.0.0",
+   "description": "",
+   "main": "react.js",
+   "targets": {
+      "frontend": {
+         "source": "public/index.html"
+      },
+      "backend": {
+         "source": "./index.js"
+      }
+   },
+   "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "start": "parcel public/index.html",
+      "dev": "rm -rf ./development && rm -rf ./.cache && parcel public/index.html --out-dir development -p 3000",
+      "build": "parcel build public/index.html --out-dir dist --public-url ./"
+   },
+   "keywords": [],
+   "author": "",
+   "license": "ISC",
+   "devDependencies": {
+      "@babel/cli": "^7.18.10",
+      "@babel/core": "^7.19.1",
+      "@babel/plugin-transform-runtime": "^7.19.1",
+      "@babel/preset-env": "^7.19.1",
+      "@parcel/transformer-sass": "^2.7.0",
+      "eslint": "^8.22.0",
+      "eslint-config-prettier": "^8.5.0",
+      "parcel": "^2.7.0",
+      "prettier": "^2.7.1"
+   },
+   "dependencies": {
+      "dotenv": "^16.0.2"
+   }
+}
